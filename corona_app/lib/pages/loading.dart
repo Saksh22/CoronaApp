@@ -17,13 +17,16 @@ class _LoadingState extends State<Loading> {
 
     WorldCount instance = WorldCount(url: 'india',location: 'India',flag: 'india.png');
     await instance.getCount();
-    Navigator.pushReplacementNamed(context, '/home', arguments: {
-      'location': instance.location,
-      'confirmed': instance.confirmed,
-      'flag': instance.flag,
-      'deaths': instance.deaths,
-      'recovered': instance.recovered,
-    });
+    Navigator.pushReplacementNamed(context, '/homepage');
+//    , arguments:{
+//
+//      'location': instance.location,
+//      'confirmed': instance.confirmed,
+//      'flag': instance.flag,
+//      'deaths': instance.deaths,
+//      'recovered': instance.recovered,
+//    });
+
 
 
 

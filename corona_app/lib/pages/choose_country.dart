@@ -23,7 +23,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
     WorldCount instance = locations[index];
     await instance.getCount();
-    Navigator.pop(context,{
+    Navigator.pushReplacementNamed(context, '/home',arguments:{
       'location': instance.location,
       'confirmed': instance.confirmed,
       'flag': instance.flag,
